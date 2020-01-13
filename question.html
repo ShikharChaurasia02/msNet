@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".add").click(function(){
+             $(this).clone(true).appendTo("body");
+            });
+            $(".stop").click(function(){
+            $(".add").off("click");
+        });
+    });
+</script>
+    <title>jquery</title>
+</head>
+<body>
+    <button class="add">Add</button>
+    <button class="stop">STOP</button>
+</body>
+</html>
